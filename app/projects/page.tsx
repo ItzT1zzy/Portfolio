@@ -20,7 +20,7 @@ export default function ProjectsPage() {
 						/>
 						<div className="flex flex-col">
 							<p className="text-md">Portfolio</p>
-							<p className="text-small text-default-500">by t1zzy_</p>
+							<p className="text-small text-default-500">t1zzy_</p>
 						</div>
 					</CardHeader>
 					<Divider/>
