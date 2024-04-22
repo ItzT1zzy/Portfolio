@@ -1,3 +1,5 @@
+'use client'
+
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -19,10 +21,13 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
+import React from "react";
 
 export const Navbar = () => {
+	const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
+
 		return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="xl" position="sticky" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
@@ -82,6 +87,7 @@ export const Navbar = () => {
 								}
 								href={item.href}
 								size="lg"
+								onPress={() => setIsMenuOpen()}
 							>
 								{item.label}
 							</Link>
