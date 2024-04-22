@@ -32,8 +32,7 @@ export default function ProjectsPage() {
 						<Link
 							isExternal
 							showAnchorIcon
-							href="https://github.com/ItzT1zzy"
-							isDisabled={true}
+							href="https://github.com/ItzT1zzy/Portfolio"
 						>
 							Исходный код.
 						</Link>
