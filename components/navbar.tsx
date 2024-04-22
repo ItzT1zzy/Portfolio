@@ -66,7 +66,7 @@ export const Navbar = () => {
 			</NavbarContent>
 
 			<NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
+				<Link isExternal href={siteConfig.links.github}>
 					<GithubIcon className="text-default-500" />
 				</Link>
 				<ThemeSwitch />
