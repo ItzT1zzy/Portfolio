@@ -96,7 +96,7 @@ export default function ContactsPage() {
 					</CardHeader>
 					<Divider/>
 					<CardBody>
-						<p>Мой дискорд сервер: <span className="font-bold text-primary">Скоро...</span><br/>В разроботке...</p>
+						<p>Мой дискорд сервер: <span className="font-bold text-primary"><a href="https://dsc.gg/rockwell" target="_blank">Rockwell Club</a></span><br/>Обычный дискорд сервер.</p>
 					</CardBody>
 				</Card>
 			</div>

@@ -1,8 +1,9 @@
 import { title } from "@/components/primitives";
 import { Card, CardBody, CardHeader, CardFooter } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
-import { Link } from "@nextui-org/link";
 import { Image } from "@nextui-org/image";
+import { Button } from "@nextui-org/button";
+import {Link} from "@nextui-org/link";
 
 export default function ProjectsPage() {
 	return (
@@ -20,7 +21,7 @@ export default function ProjectsPage() {
 						/>
 						<div className="flex flex-col">
 							<p className="text-md">Portfolio</p>
-							<p className="text-small text-default-500">t1zzy_</p>
+							<p className="text-small text-default-500">by t1zzy_</p>
 						</div>
 					</CardHeader>
 					<Divider/>
@@ -29,13 +30,9 @@ export default function ProjectsPage() {
 					</CardBody>
 					<Divider/>
 					<CardFooter>
-						<Link
-							isExternal
-							showAnchorIcon
-							href="https://github.com/ItzT1zzy/Portfolio"
-						>
-							Исходный код.
-						</Link>
+						<Button variant="shadow" color="primary" className="h-[35px]" isDisabled>
+							О проекте
+						</Button>
 					</CardFooter>
 				</Card>
 			</div>
